@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem, audio e video</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagem-m.jpg" type="image/jpg">
+        <img src="imagem-g.jpg" alt="Imagem flexivel">
+    </picture>
+
+    <audio preload="metadata" controls>
+        <source src="mcpoze-audio.mp3" type="audio/mpeg">
+        <source src="mcpoze-audio.ogg" type="audio/ogg">
+        <source src="mcpoze-audio.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio
+        <a href="mcpoze-audio.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <h2>Vídeo carregado internamente</h2>
+    <video width="500" poster="thumb.jpg" controls autoplay>
+        <source src="video.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <p>Seu navegador não conseguiu carregar o vídeo</p>
+    </video>
+
+    <h2>Vídeo carregado do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2PRAiVs3MVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Vídeo carregado do vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/546472954?h=7e0cac47a4" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/546472954">Routine Rhythms!</a> from <a href="https://vimeo.com/ladelune">ladelune</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    
+</body>
+</html>

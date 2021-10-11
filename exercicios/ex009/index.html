@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas em HTML</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Veja abaixo um exemplo de lista ordenada</p>
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <p>A tag ol possui o parâmetro type onde podemos escoher o tipo de marcador atual,
+        as opções para este parâmetro são: 1,A,a,I,i
+    </p>
+
+    <h2>Listas não ordenadas</h2>
+    <p>Agora um exemplo de lista não ordenada</p>
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <p>O marcador padrão é a bolinha preta totalmente preenchida, mas você pode usar o type e 
+    escolher entre: square, circle e disc<p>
+
+    <h2>Listas mistas</h2>
+    <p>Podemos tambem criar listas dentro de outras listas como no exemplo:</p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="I">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <ol type="I">
+            <li>Item 3.1</li>
+            <li>Item 3.2</li>
+            <li>Item 3.3</li>
+        </ol>
+    </ol>
+
+    <h2>Lista de definições</h2>
+    <p>É como se fosse um dicionário, temos os termos e suas definições. É uma lisa
+        sem demarcadores, mas bem útil em alguns casos.
+    </p>
+
+    <p>Toda lista de definições está dentro da tag dl, cada item é um dt e cada descrição.
+        é um dd. Essas duas últimas assim como itens da lista, essas duas últimas possuem fechamento opcional
+    </p>
+
+    <p>Veja um exemplo de lista  de definição:</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar conteúdo de sites</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilo em sites</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividades em sites</dd>
+    </dl>
+</body>
+</html>
